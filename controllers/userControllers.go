@@ -231,11 +231,3 @@ func DeleteUser(c *gin.Context) {
 	database.DB.Delete(&user)
 	c.JSON(http.StatusOK, gin.H{"message": "Success Delete Data User", "data": user})
 }
-
-// func Validate(c *gin.Context) {
-// 	user, _ := c.Get("user")
-
-// 	c.JSON(http.StatusOK, gin.H{
-// 		"message": user,
-// 	})
-// }
